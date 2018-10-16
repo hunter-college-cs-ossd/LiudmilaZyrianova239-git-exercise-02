@@ -1,6 +1,6 @@
 /******************************************************************************
   Title          : main.cpp
-  Author         : LiudmilaZyrianova239
+  Author         : LiudmilaZyrianova239, Jimmyzs
   Created on     : October  7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
@@ -50,13 +50,20 @@ ostream& LiudmilaZyrianova239_oddity(ostream & out){
     return out;
 }
 
-
+ostream& Jimmyzs_oddity(ostream & out)
+{
+    out<<"Why are cigarettes sold in gas stations when smoking is prohibited there?\n";
+    return out;
+}
 
 int main(int argc, char* argv[] )
 {
 
     // Calls to output functions
     LiudmilaZyrianova239_oddity(cout);
+    output_function Jimmyzs;
+    Jimmyzs = Jimmyzs_oddity;
+    Jimmyzs(cout);
 
 
     return 0;
