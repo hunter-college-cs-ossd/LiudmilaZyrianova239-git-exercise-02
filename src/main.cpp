@@ -7,6 +7,7 @@
   Usage          : nuttyfact
   Build with     : g++ -Wall -g -o oddities  main.cpp
   Modifications  : Added a function LiudmilaZyrianova239_oddity
+                   Added the function Jimmyzs_oddity to main.cpp
   Notes:
   The number N below is the number of people on each team.
   This program prints N peculiar facts, called "oddities" here.
@@ -50,13 +51,20 @@ ostream& LiudmilaZyrianova239_oddity(ostream & out){
     return out;
 }
 
-
+ostream& Jimmyzs_oddity(ostream & out)
+{
+    out<<"Why are cigarettes sold in gas stations when smoking is prohibited there?\n";
+    return out;
+}
 
 int main(int argc, char* argv[] )
 {
 
     // Calls to output functions
     LiudmilaZyrianova239_oddity(cout);
+    output_function Jimmyzs;
+    Jimmyzs = Jimmyzs_oddity;
+    Jimmyzs(cout);
 
 
     return 0;
