@@ -50,13 +50,21 @@ ostream& LiudmilaZyrianova239_oddity(ostream & out){
     return out;
 }
 
+ostream& yizongk_oddity(ostream& out) {
+    out << "Why do you need a driver's license to buy liquor when you can't drink and drive? (But passport works too! Funny though :) )\n";
+    return out;
+}
 
 
 int main(int argc, char* argv[] )
 {
 
     // Calls to output functions
-    LiudmilaZyrianova239_oddity(cout);
+    output_function a;
+    a = &LiudmilaZyrianova239_oddity;
+    a(cout);
+    a = &yizongk_oddity;
+    (*a)(cout);
 
 
     return 0;
