@@ -1,6 +1,6 @@
 /******************************************************************************
   Title          : main.cpp
-  Author         : LiudmilaZyrianova239, Jimmyzs_oddity, yizongk_oddity, stewartweiss_oddity
+  Authors        : LiudmilaZyrianova239, Jimmyzs, yizongk, stewartweiss
   Created on     : October  7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
