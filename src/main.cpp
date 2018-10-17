@@ -1,6 +1,6 @@
 /******************************************************************************
   Title          : main.cpp
-  Authors        : LiudmilaZyrianova239, Jimmyzs, yizongk, stewartweiss
+  Authors        : LiudmilaZyrianova239, Jimmyzs, yizongk, audiencia_cereal, stewartweiss
   Created on     : October  7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
@@ -9,6 +9,7 @@
   Modifications  : Added a function LiudmilaZyrianova239_oddity
                    Added the function Jimmyzs_oddity to main.cpp
                    Added the function yizongk_oddity to main.cpp
+                   Added the function audiencia_cereal_oddity to main.cpp
   Notes:
   The number N below is the number of people on each team.
   This program prints N peculiar facts, called "oddities" here.
