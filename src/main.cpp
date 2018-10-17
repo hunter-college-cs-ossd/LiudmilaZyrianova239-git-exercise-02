@@ -64,6 +64,11 @@ ostream& yizongk_oddity(ostream& out) {
     return out;
 }
 
+ostream& audiencia_cereal_oddity(ostream& out)
+{
+    out << "Why do they put Braille dots on the keypad of the drive-up ATM?\n";
+    return out;
+}
 
 
 int main(int argc, char* argv[] )
@@ -78,7 +83,8 @@ int main(int argc, char* argv[] )
     a(cout);
     a = &yizongk_oddity;
     a(cout);
-
+    a = &audiencia_cereal_oddity;
+    a(cout);
 
     return 0;
 }
