@@ -1,6 +1,6 @@
 /******************************************************************************
   Title          : main.cpp
-  Author         : LiudmilaZyrianova239
+  Author         : LiudmilaZyrianova239, Jimmyzs_oddity, yizongk_oddity, stewartweiss_oddity
   Created on     : October  7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
@@ -8,6 +8,7 @@
   Build with     : g++ -Wall -g -o oddities  main.cpp
   Modifications  : Added a function LiudmilaZyrianova239_oddity
                    Added the function Jimmyzs_oddity to main.cpp
+                   Added the function yizongk_oddity to main.cpp
   Notes:
   The number N below is the number of people on each team.
   This program prints N peculiar facts, called "oddities" here.
@@ -51,20 +52,32 @@ ostream& LiudmilaZyrianova239_oddity(ostream & out){
     return out;
 }
 
+
 ostream& Jimmyzs_oddity(ostream & out)
 {
     out<<"Why are cigarettes sold in gas stations when smoking is prohibited there?\n";
     return out;
 }
 
+ostream& yizongk_oddity(ostream& out) {
+    out << "Why do you need a driver's license to buy liquor when you can't drink and drive? (But passport works too! Funny though :) )\n";
+    return out;
+}
+
+
+
 int main(int argc, char* argv[] )
 {
 
     // Calls to output functions
-    LiudmilaZyrianova239_oddity(cout);
-    output_function Jimmyzs;
-    Jimmyzs = Jimmyzs_oddity;
-    Jimmyzs(cout);
+
+    output_function a;
+    a = &LiudmilaZyrianova239_oddity;
+    a(cout);
+    a = &Jimmyzs_oddity;
+    a(cout);
+    a = &yizongk_oddity;
+    a(cout);
 
 
     return 0;
