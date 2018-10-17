@@ -1,6 +1,6 @@
 /******************************************************************************
   Title          : main.cpp
-  Author         : LiudmilaZyrianova239, Jimmyzs_oddity, yizongk_oddity, stewartweiss_oddity
+  Authors        : LiudmilaZyrianova239, Jimmyzs, yizongk, audiencia_cereal, stewartweiss
   Created on     : October  7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
@@ -9,6 +9,7 @@
   Modifications  : Added a function LiudmilaZyrianova239_oddity
                    Added the function Jimmyzs_oddity to main.cpp
                    Added the function yizongk_oddity to main.cpp
+                   Added the function audiencia_cereal_oddity to main.cpp
   Notes:
   The number N below is the number of people on each team.
   This program prints N peculiar facts, called "oddities" here.
@@ -64,6 +65,11 @@ ostream& yizongk_oddity(ostream& out) {
     return out;
 }
 
+ostream& audiencia_cereal_oddity(ostream& out)
+{
+    out << "Why do they put Braille dots on the keypad of the drive-up ATM?\n";
+    return out;
+}
 
 
 int main(int argc, char* argv[] )
@@ -78,7 +84,8 @@ int main(int argc, char* argv[] )
     a(cout);
     a = &yizongk_oddity;
     a(cout);
-
+    a = &audiencia_cereal_oddity;
+    a(cout);
 
     return 0;
 }
